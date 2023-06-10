@@ -13,6 +13,6 @@ import { ApiService } from './services/api.service';
 export class AppComponent {
   title = 'telegram-web-app';
   apiService = inject(ApiService);
-  data$ = this.apiService.getData();
+  data$ = this.apiService.getTelegramUser();
   telegramData = this.apiService.telegramData();
 }
