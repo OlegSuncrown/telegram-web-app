@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { map } from 'rxjs';
+import { Telegram } from "@twa-dev/types"
 
 declare global {
   interface Window {
-    Telegram: any;
+    Telegram: Telegram;
   }
 }
 
